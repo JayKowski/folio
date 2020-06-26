@@ -15,6 +15,7 @@ ul {
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 /*************/
 
@@ -76,10 +77,12 @@ a{
     border: 2px solid #eee;
     padding: 7px;
     margin-top: 10px;
+    border-radius: 4px;
 }
 
 
 /* about-me */
+
 #about-me {
     padding-top: 10px;
     height: 300px;
@@ -106,6 +109,7 @@ a{
     text-transform: capitalize;
     background-color: #696969;
     color: #eee;
+    border-radius: 3px;
 }
 
 #about-me .resume a{
@@ -181,6 +185,10 @@ a{
     padding-right: 30px;
 }
 
+#portfolio .info{
+    width: 30%;
+}
+
 #portfolio .project{
     width: 400px;
     height: 210px;
@@ -194,6 +202,16 @@ a{
     border: 1px solid purple;
     border-radius: 4px;
     color: purple;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+#portfolio .github{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 4px;
+    color: rgb(99, 99, 99);
     font-family: monospace;
     font-size: 15px;
 }
@@ -245,6 +263,7 @@ footer .fab, footer .fas{
 footer ul{
     width: 100%;
     text-align: center;
+    overflow: auto;
 }
 footer li{
     float: left;
@@ -252,4 +271,134 @@ footer li{
     padding-right: 15%;
     padding-left: 8%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* Media Querries */
+
+@media only screen and (max-width: 600px) {
+     .navbar .nav-links{
+        display: none;
+    }
+
+    .navbar .media{
+        margin-top: 22px;
+    }
+    .navbar .deets{
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    .navbar .media .fab{
+        font-size: 30px;
+    }
+
+    /* Name */
+
+    #name{
+        margin: 5px;
+    }
+
+    #name .deets{
+        width: 89%;
+    }
+    /*About Me*/
+    #about-me{
+        width: 95%;
+        margin: 5px;
+        padding: 5px;
+        height: auto;
+        text-align: center;
+    }
+
+    #about-me .heading{
+        width: 100%;
+        padding: 0% 0%;
+    }
+
+    #about-me .personal{
+        display: block;
+    }
+
+    /* skills */
+
+    #skills .focus{
+        display: none;
+    }
+
+    #skills .disciplines{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .disciplines li{
+        width: 49%;
+    }
+
+    .disciplines li img{
+        padding: 10px;
+    }
+    /*portfolio*/
+
+    #portfolio h1{
+        padding: 0% 28%;
+        text-align: center;
+    }
+
+    hr{
+        border-top: 1px solid #8c8b8b;
+        border-bottom: 1px solid #fff;
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    #portfolio h3{
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #portfolio ul{
+        padding: 0;
+    }
+
+    #portfolio .project{
+        margin: 15px 0;
+        width: 95%;
+        height: 0%;
+        padding: 5px 4.5%;
+        border: none;
+    }
+
+    #portfolio .tech-cont{
+        padding: 0px 4%;
+    }
+
+    #portfolio .live-demo {
+        margin: 5px 5.4%;
+        display: inline-block;
+    }
+
+    #portfolio .github {
+    margin: 5px 5.4%;
+    display: block;
+    width: max-content;
+}
+
+    /*footer*/
+    footer .reach{
+        padding-right: 0;
+    }
+
+    footer ul{
+        padding: 0%;
+    }
+
+    footer li{
+        display: block;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin: 5px 0%;
+    }
 }
