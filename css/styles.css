@@ -370,6 +370,10 @@ footer li{
         border: none;
     }
 
+    #portfolio .tech{
+        display: inline-block;
+    }
+
     #portfolio .tech-cont{
         padding: 0px 4%;
     }
