@@ -5,7 +5,8 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Poppins',
+    sans-serif;
     overflow-x: hidden;
 }
 
@@ -33,7 +34,11 @@ a{
 }
 
 .navbar .nav-links{
-    margin: 0 27%;
+    margin: 0 24%;
+    text-transform: uppercase;
+    font-family: 'Nunito',
+    sans-serif;
+    font-weight: bolder;
 }
 .navbar .link{
     padding: 0 15px 0 15px;
@@ -143,6 +148,7 @@ a{
 }
 
 #skills .disciplines{
+    display: flex;
     float: right;
     margin: 0 auto;
     text-align: left;
@@ -165,6 +171,16 @@ a{
     /* display: inline-block; */
 }
 
+.langs .html {
+    color: #e34c26;
+}
+.langs .css {
+    color: #264de4;
+}
+
+.langs .js {
+    color: #f0db4f;
+}
 
 /* portfolio */
 #portfolio{
@@ -180,9 +196,36 @@ a{
     margin: 10px auto;
 }
 
+#portfolio .projects-gallery {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#portfolio .projects-gallery .flex-gallery {
+    display: flex;
+    padding: 0;
+}
+
+#portfolio .projects-gallery .project-data {
+    padding: 1rem 1.5rem;
+}
+
+.flex-gallery h3 {
+    color: #4a4a4e;
+}
+
+.flex-gallery p {
+    color: #4a5568;
+    margin-bottom: 0;
+}
+
 #portfolio li{
+    border-radius: .25rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%),
+    0 4px 6px -2px rgb(0 0 0 / 5%);
     display: inline-block;
-    padding-right: 30px;
+    margin-right: 3rem;
 }
 
 #portfolio .info{
@@ -221,13 +264,20 @@ a{
     background-color: purple;
 } */
 
+#portfolio .tech-cont {
+    padding: 1rem 1.5rem;
+}
+
 #portfolio .tech{
-    border: 1px solid green;
-    padding: 5px;
+    display: inline-block;
+    border: 1px solid #e2e8f0;
+    padding: .25rem .75rem;
     margin: 5px 5px;
-    font-family: monospace;
-    border-radius: 4px;
-    color: green;
+    background-color: #edf2f7;
+    font-weight: 600;
+    font-size: .875rem;
+    border-radius: 9999px;
+    color: #4a5568;
 }
 
 /* footer */
@@ -368,6 +418,10 @@ footer li{
         height: 0%;
         padding: 5px 4.5%;
         border: none;
+    }
+
+    #portfolio li {
+        
     }
 
     #portfolio .tech{
