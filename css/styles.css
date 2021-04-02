@@ -280,6 +280,10 @@ a{
     color: #4a5568;
 }
 
+#portfolio .ext-link {
+    text-decoration: underline;
+}
+
 /* footer */
 
 footer{
@@ -405,11 +409,12 @@ footer li{
 
     #portfolio h3{
         text-align: center;
-        margin-bottom: 0;
+        margin: 0;
+        margin-bottom: 10px;
     }
 
-    #portfolio ul{
-        padding: 0;
+    #portfolio .projects-gallery .flex-gallery {
+        display: block;
     }
 
     #portfolio .project{
@@ -421,7 +426,8 @@ footer li{
     }
 
     #portfolio li {
-        
+        width: 100%;
+        margin-top: 10px;
     }
 
     #portfolio .tech{
@@ -437,10 +443,15 @@ footer li{
         display: inline-block;
     }
 
+    #portfolio .live-links {
+        text-align: center;
+    }
+
     #portfolio .github {
     margin: 5px 5.4%;
-    display: block;
-    width: max-content;
+    width: 5rem;
+    display: inline-block;
+    /* width: max-content; */
 }
 
     /*footer*/
