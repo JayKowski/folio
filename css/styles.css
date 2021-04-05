@@ -25,6 +25,12 @@ a{
 
 /*Navbar*/
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navbar .logo{
     font-family: fantasy;
     font-size: 25px;
@@ -38,6 +44,7 @@ a{
 
 .navbar .nav-links{
     margin: 0 24%;
+    padding: 0;
     text-transform: uppercase;
     font-family: 'Nunito',
     sans-serif;
@@ -54,9 +61,8 @@ a{
 }
 
 .navbar .media{
-    float: right;
-    margin-right: 17px;
-    margin-top: 35px;
+    margin: 0;
+    font-size: 30px;
 }
 
 /* name */
@@ -364,12 +370,22 @@ footer li{
 /* Media Querries */
 
 @media only screen and (max-width: 600px) {
-     .navbar .nav-links{
+    .navbar {
+        justify-content: space-between;
+        width: 92%;
+        margin: auto;
+    }
+
+    .navbar .logo {
+        padding: 0;
+    }
+    
+    .navbar .nav-links {
         display: none;
     }
 
     .navbar .media{
-        margin-top: 22px;
+        /* margin-top: 22px; */
     }
     .navbar .deets{
         width: 100%;
