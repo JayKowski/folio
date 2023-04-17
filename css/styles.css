@@ -51,9 +51,9 @@ a{
     margin: 0 24%;
     padding: 0;
     text-transform: uppercase;
-    font-family: 'Nunito',
+    font-family: 'Poppins',
     sans-serif;
-    font-weight: bolder;
+    /* font-weight: bolder; */
 }
 .navbar .link{
     padding: 0 15px 0 15px;
@@ -62,7 +62,11 @@ a{
 }
 
 .navbar .link a{
+    /* font-family: 'Nunito',
+    sans-serif; */
     color: black;
+    font-family: 'Poppins',
+    sans-serif;
 }
 
 .navbar .media{
@@ -123,25 +127,24 @@ a{
     padding-top: 10px;
     /* height: 300px; */
     line-height: 2.4rem;
+    display: flex;
+    flex-direction: column;
 }
 
 #about-me .heading {
-    float: left;
-    padding: 30px;
-    width: 300px;
     text-shadow: 5px 3px 3px #c0c0c0;
-}
-
-#about-me .heading::after{
-    overflow: none;
-    display: none;
-    clear: both;
+    text-align: center;
 }
 
 #about-me .resume-btn-div {
     width: 10%;
     margin: 5px auto;
     text-align: center;
+}
+
+#about-me .personal p {
+    margin: 0;
+    padding: 1rem 2rem;
 }
 
 #about-me .resume{
